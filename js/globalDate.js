@@ -1,10 +1,3 @@
-const structureTableRatingPlayers = [
-  "Гравці",
-  "К-сть ігор",
-  "К-сть перемог",
-  "Рейтинг",
-];
-
 const players = ["Радчук Д.", "Моргун М.", "Макаренко О.", "Д.", "Гарматій Р."];
 
 const gameDate = [

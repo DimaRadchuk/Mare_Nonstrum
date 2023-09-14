@@ -5,20 +5,27 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="style/css/style.css" />
-  <script type="text/javascript" src="js/globalDate.js"></script>
+
+  <script type="text/javascript" src="js/dom.js" defer></script>
+  <script type="text/javascript" src="js/globalDate.js" defer></script>
+  <script type="text/javascript" src="js/script.js" defer></script>
+
   <title>Наше море</title>
   <style></style>
 </head>
 
 <body>
   <h1>Рейтинг</h1>
-  <div id="table-container"></div>
-  <script src="js/script.js"></script>
-
-  <!-- <table class="players_rating_table">
-      <thead class="players_rating_table_thead"></thead>
-      <tbody class="players_rating_table_tbody" id="playerRating"></tbody> -->
-  <!-- </table> -->
+  <div id="players_rating_container"></div>
+  <table class="players_rating_table">
+    <thead class="players_rating_table_thead">
+      <th>Гравці</th>
+      <th>К-сть ігор</th>
+      <th>К-сть перемог</th>
+      <th>Рейтинг</th>
+    </thead>
+    <tbody class="players_rating_table_tbody" id="playerRating"></tbody>
+  </table>
 </body>
 
 </html>

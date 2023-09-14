@@ -33,19 +33,8 @@ function getWinRating(player, obj) {
   return gameRating;
 }
 
-function createTableRatingPlayers(structure, players, obj) {
-  const table = document.createElement("table");
-  const headerRow = document.createElement("tr");
-
-  // Create table header row
-  const keys = Object.values(structure);
-  for (const key of keys) {
-    const headerCell = document.createElement("th");
-    headerCell.textContent = key;
-    headerRow.appendChild(headerCell);
-  }
-  table.appendChild(headerRow);
-
+function createTableRatingPlayers(players, obj) {
+  const bodyRow = document.createElement("tbody");
   // Create table data rows
   players.forEach(function (player) {
     const dataRow = document.createElement("tr");
@@ -65,16 +54,8 @@ function createTableRatingPlayers(structure, players, obj) {
     dataCell.forEach(function (cell) {
       dataRow.appendChild(cell);
     });
-    table.appendChild(dataRow);
+    DOM.playerRating.appendChild(dataRow);
   });
-  return table;
 }
 
-const table = createTableRatingPlayers(
-  structureTableRatingPlayers,
-  players,
-  gameDate
-);
-
-const tableContainer = document.getElementById("table-container");
-tableContainer.appendChild(table);
+const tbodyRating = createTableRatingPlayers(players, gameDate);
