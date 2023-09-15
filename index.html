@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="stylesheet" href="style/css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
   <script type="text/javascript" src="js/dom.js" defer></script>
   <script type="text/javascript" src="js/globalDate.js" defer></script>
@@ -15,17 +15,26 @@
 </head>
 
 <body>
-  <h1>Рейтинг</h1>
-  <div id="players_rating_container"></div>
-  <table class="players_rating_table">
-    <thead class="players_rating_table_thead">
-      <th>Гравці</th>
-      <th>К-сть ігор</th>
-      <th>К-сть перемог</th>
-      <th>Рейтинг перемог</th>
-    </thead>
-    <tbody class="players_rating_table_tbody" id="playerRating"></tbody>
-  </table>
+  <div class="background_img">
+    <!-- <img src="image/back_img.jpg" class="background_img"> -->
+    <header>
+      <div class="header_container">
+        <h1>Турнір по грі "Наше море"<br>від "Твоєї території"</h1>
+      </div>
+    </header>
+    <div class="players_rating_container">
+      <h1 class="players_rating_title">Рейтинг гравців</h1>
+      <table class="players_rating_table">
+        <thead class="players_rating_table_thead">
+          <th>Гравці</th>
+          <th>К-сть ігор</th>
+          <th>К-сть перемог</th>
+          <th>Рейтинг перемог</th>
+        </thead>
+        <tbody class="players_rating_table_tbody" id="playerRating"></tbody>
+      </table>
+    </div>
+  </div>
 </body>
 
 </html>

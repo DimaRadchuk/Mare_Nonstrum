@@ -1,0 +1,60 @@
+/* background img */
+.background_img {
+    background-image: url('../image/back_img.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+/* header */
+header {
+    padding: 0 0 10px 0;
+}
+
+.header_container {
+    margin: auto;
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+}
+
+/* player table */
+
+.players_rating_container {
+    padding: 0 15px 15px 0;
+    margin: auto;
+    border-radius: 3%;
+}
+
+.players_rating_title {
+    width: 255px;
+    border-radius: 0.5em;
+    margin: auto;
+    text-align: center;
+    background-color: #eebb5d;
+}
+
+.players_rating_table {
+    background-color: #f5c160;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    box-shadow: 3px;
+    margin: auto;
+
+}
+
+.players_rating_table th {
+    background-color: #8d3613c2;
+}
+
+.players_rating_table th,
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+
+.players_rating_table_tbody tr:hover {
+    background-color: #f7a84dc2;
+}
