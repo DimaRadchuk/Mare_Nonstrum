@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css" />
 
   <script type="text/javascript" src="js/dom.js" defer></script>
+  <script type="text/javascript" src="js/shortTable.js" defer></script>
   <script type="text/javascript" src="js/globalDate.js" defer></script>
   <script type="text/javascript" src="js/script.js" defer></script>
 
@@ -23,24 +24,24 @@
     </header>
     <div class="players_rating_container">
       <h1 class="players_rating_title">Рейтинг гравців</h1>
-      <table class="players_rating_table">
+      <table class="players_rating_table" id="ratingTablePlayers">
         <thead class="players_rating_table_thead">
-          <th>Гравці</th>
-          <th>К-сть ігор</th>
-          <th>К-сть перемог</th>
-          <th>Рейтинг перемог</th>
+          <th onclick="sortTablePlayers(0)">Гравці</th>
+          <th onclick="sortTablePlayers(1)">К-сть ігор</th>
+          <th onclick="sortTablePlayers(2)">К-сть перемог</th>
+          <th onclick="sortTablePlayers(3)">Рейтинг перемог</th>
         </thead>
         <tbody class="players_rating_table_tbody" id="playerRating"></tbody>
       </table>
     </div>
     <div class="faction_rating_container">
       <h1 class="faction_rating_title">Рейтинг фракції</h1>
-      <table class="faction_rating_table">
+      <table class="faction_rating_table" id="ratingTableFaction">
         <thead class="faction_rating_table_thead">
-          <th>Фракція</th>
-          <th>К-сть ігор</th>
-          <th>К-сть перемог</th>
-          <th>Рейтинг перемог</th>
+          <th onclick="sortTableFaction(0)">Фракція</th>
+          <th onclick="sortTableFaction(1)">К-сть ігор</th>
+          <th onclick="sortTableFaction(2)">К-сть перемог</th>
+          <th onclick="sortTableFaction(3)">Рейтинг перемог</th>
         </thead>
         <tbody class="faction_rating_table_tbody" id="factionRating"></tbody>
       </table>
