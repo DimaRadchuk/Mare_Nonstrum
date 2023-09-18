@@ -1,6 +1,14 @@
-const players = ["Радчук Д.", "Моргун М.", "Макаренко О.", "Д.", "Гарматій Р."];
+const players = [
+  "Когут П.",
+  "Попівчак М.",
+  "Радчук Д.",
+  "Моргун М.",
+  "Макаренко О.",
+  "Матичак Д.",
+  "Гарматій Р.",
+];
 
-const factions = ["Рим", "Греція", "Карфаґен", "Єгипет", "Вавилон"];
+const factions = ["Рим", "Греція", "Карфаген", "Єгипет", "Вавилон"];
 
 const gameDate = [
   {
@@ -8,8 +16,8 @@ const gameDate = [
     players: [
       { player: "Радчук Д.", faction: "Греція", points: 0 },
       { player: "Моргун М.", faction: "Рим", points: 0 },
-      { player: "Макаренко О.", faction: "Карфаґен", points: 0 },
-      { player: "Д.", faction: "Єгипет", points: 1 },
+      { player: "Макаренко О.", faction: "Карфаген", points: 0 },
+      { player: "Матичак Д.", faction: "Єгипет", points: 1 },
       { player: "Гарматій Р.", faction: "Вавилон", points: 0 },
     ],
     description: "Перемога здобувши 5 героїв.",
@@ -17,10 +25,20 @@ const gameDate = [
   {
     date: "18-09-2023",
     players: [
-      { player: "", faction: "Греція", points: 0 },
-      { player: "", faction: "Рим", points: 1 },
-      { player: "", faction: "Карфаґен", points: 0 },
-      { player: "", faction: "Єгипет", points: 0 },
+      { player: "Гарматій Р.", faction: "Греція", points: 0 },
+      { player: "Попівчак М.", faction: "Рим", points: 1 },
+      { player: "Когут П.", faction: "Карфаген", points: 0 },
+      { player: "Моргун М.", faction: "Єгипет", points: 0 },
+    ],
+    description: "Перемога здобувши лідерство.",
+  },
+  {
+    date: "18-09-2023",
+    players: [
+      { player: "Моргун М.", faction: "Греція", points: 0 },
+      { player: "Попівчак М.", faction: "Рим", points: 0 },
+      { player: "Когут П.", faction: "Карфаген", points: 0 },
+      { player: "Гарматій Р.", faction: "Єгипет", points: 1 },
     ],
     description: "Перемога здобувши лідерство.",
   },
