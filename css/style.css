@@ -46,7 +46,7 @@ header h1 {
 
 .players_rating_title,
 .faction_rating_title {
-    width: 350px;
+    width: 300px;
     border-radius: 0.25em;
     margin: auto;
     text-align: center;
@@ -60,7 +60,7 @@ header h1 {
     border-collapse: collapse;
     box-shadow: 3px;
     margin: auto;
-    width: 480px;
+    width: 500px;
 
 }
 
