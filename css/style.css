@@ -35,7 +35,7 @@ header h1 {
 
 .players_rating_container,
 .faction_rating_container {
-    padding: 0 15px 15px 0;
+    padding: 0 0 15px 0;
     margin: auto;
     border-radius: 3%;
 }
@@ -60,7 +60,7 @@ header h1 {
     border-collapse: collapse;
     box-shadow: 3px;
     margin: auto;
-    width: 500px;
+    width: 600px;
 
 }
 
