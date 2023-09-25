@@ -10,7 +10,7 @@ function sortTablePlayers(n) {
     switchcount = 0;
   table = document.getElementById("ratingTablePlayers");
   switching = true;
-  dir = "asc";
+  dir = "desc";
   while (switching) {
     switching = false;
     rows = table.rows;
@@ -41,8 +41,8 @@ function sortTablePlayers(n) {
       switching = true;
       switchcount++;
     } else {
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
+      if (switchcount == 0 && dir == "desc") {
+        dir = "asc";
         switching = true;
       }
     }
@@ -61,7 +61,7 @@ function sortTableFaction(n) {
     switchcount = 0;
   table = document.getElementById("ratingTableFaction");
   switching = true;
-  dir = "asc";
+  dir = "desc";
   while (switching) {
     switching = false;
     rows = table.rows;
@@ -86,8 +86,8 @@ function sortTableFaction(n) {
       switching = true;
       switchcount++;
     } else {
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
+      if (switchcount == 0 && dir == "desc") {
+        dir = "asc";
         switching = true;
       }
     }
