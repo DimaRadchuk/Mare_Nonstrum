@@ -28,7 +28,9 @@ header {
 }
 
 header h1 {
+    margin: 15px 0 0 0;
     text-align: center;
+
 }
 
 /* player and faction table */
@@ -50,9 +52,10 @@ header h1 {
 
 .players_rating_title,
 .faction_rating_title {
+
     width: 300px;
     border-radius: 0.25em;
-    margin: auto;
+    margin: 15px auto 0 auto;
     text-align: center;
     background-color: #eebb5d;
 }
