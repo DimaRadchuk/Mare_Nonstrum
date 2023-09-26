@@ -5,6 +5,7 @@
 
 /* background img */
 body {
+    width: auto;
     background-image: url('../image/back_img.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
