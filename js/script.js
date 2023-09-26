@@ -102,6 +102,34 @@ function getWinRatingFaction(faction, obj) {
 
 // faction table
 
+function createTableRatingFactionRow(obj) {
+  const factionsRow = document.getElementsByClassName(
+    "faction_rating_table_tr"
+  );
+  const factions = document.getElementsByClassName("faction_rating_table_name");
+  // Create table data rows
+  factionsRow.forEach(function (faction) {
+    let dataCellFaction = [
+      document.createElement("td"),
+      document.createElement("td"),
+      document.createElement("td"),
+    ];
+
+    faction = getElementsByClassName("faction_rating_table_name").textContent;
+    DOM.factionRatingRow.appendChild(faction);
+    dataCellFaction[0].textContent = getCountGameFaction(faction, obj);
+    dataCellFaction[1].textContent = getCountWinGameFaction(faction, obj);
+    dataCellFaction[2].textContent = getWinRatingFaction(faction, obj);
+
+    dataCellFaction.forEach(function (cell) {
+      dataRowFaction.appendChild(cell);
+    });
+    DOM.factionRatingRow.appendChild(dataRowFaction);
+  });
+}
+
+const tbodyFactionRatingRow = createTableRatingFactionRow(gameDate);
+
 function createTableRatingFaction(factions, obj) {
   // Create table data rows
   factions.forEach(function (faction) {
