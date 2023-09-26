@@ -5,6 +5,7 @@
 
 /* background img */
 body {
+    min-width: 600px;
     width: auto;
     background-image: url('../image/back_img.jpg');
     background-repeat: no-repeat;
@@ -15,23 +16,15 @@ body {
 
 /* header */
 header {
+    margin: 0.5em auto 0 auto;
     top: 0;
-    width: 500px;
+    width: 30em;
     background-color: #eebb5d;
     border-radius: 0.5em;
-    padding: 0 0 0 0;
-    margin: auto;
 }
 
 .header_container {
-    margin: auto;
     text-align: center;
-}
-
-header h1 {
-    margin: 15px 0 0 0;
-    text-align: center;
-
 }
 
 /* player and faction table */
@@ -40,23 +33,22 @@ header h1 {
     display: flexbox;
 }
 
-.players_rating_container,
-.faction_rating_container {
-    padding: 0 0 15px 0;
-    margin: auto;
+.players_rating_container {
+    padding: 0 1em 0 1em;
     border-radius: 3%;
 }
 
 .faction_rating_container {
-    margin: 0 0 90px 0;
+    padding: 0 1em 3em 1em;
+    border-radius: 3%;
 }
 
 .players_rating_title,
 .faction_rating_title {
 
-    width: 300px;
+    width: 10em;
     border-radius: 0.25em;
-    margin: 15px auto 0 auto;
+    margin: 1.5em auto auto auto;
     text-align: center;
     background-color: #eebb5d;
 }
@@ -64,11 +56,10 @@ header h1 {
 .players_rating_table,
 .faction_rating_table {
     background-color: #f5c160;
-    border: 1px solid #000000;
+    border: 0.1em solid #000000;
     border-collapse: collapse;
-    box-shadow: 3px;
     margin: auto;
-    width: 600px;
+    width: 35em;
 
 }
 
@@ -86,9 +77,9 @@ header h1 {
 .players_rating_table td,
 .faction_rating_table th,
 .faction_rating_table td {
-    padding: 10px;
+    padding: 1em;
     text-align: center;
-    border-bottom: 1px solid #000000;
+    border-bottom: 0.1em solid #000000;
 }
 
 .players_rating_table_tbody tr:hover,
@@ -98,7 +89,6 @@ header h1 {
 
 /* footer */
 footer {
-
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -108,7 +98,7 @@ footer {
 }
 
 .creator_title {
-    padding: 10px 25px 10px 0;
+    padding: 0.1em 1em 0.1em 0;
     text-align: right;
     font-style: italic;
 }
