@@ -16,40 +16,38 @@
 </head>
 
 <body onload="sortTablePlayers(1); sortTablePlayers(3); sortTableFaction(3)">
-  <div class="background_img">
-    <header>
-      <div class="header_container">
-        <h1>Турнір по грі "Наше море"<br>від "Твоя територія"</h1>
-      </div>
-    </header>
-    <div class="players_rating_container">
-      <h1 class="players_rating_title">Рейтинг гравців</h1>
-      <table class="players_rating_table" id="ratingTablePlayers">
-        <thead class="players_rating_table_thead">
-          <th onclick="sortTablePlayers(0)">Гравці</th>
-          <th onclick="sortTablePlayers(1)">К-сть ігор</th>
-          <th onclick="sortTablePlayers(2)">К-сть перемог</th>
-          <th onclick="sortTablePlayers(3)">Рейтинг перемог</th>
-        </thead>
-        <tbody class="players_rating_table_tbody" id="playerRating"></tbody>
-      </table>
+  <header>
+    <div class="header_container">
+      <h1>Турнір по грі "Наше море"<br>від "Твоя територія"</h1>
     </div>
-    <div class="faction_rating_container">
-      <h1 class="faction_rating_title">Рейтинг фракцій</h1>
-      <table class="faction_rating_table" id="ratingTableFaction">
-        <thead class="faction_rating_table_thead">
-          <th onclick="sortTableFaction(0)">Фракція</th>
-          <th onclick="sortTableFaction(1)">К-сть ігор</th>
-          <th onclick="sortTableFaction(2)">К-сть перемог</th>
-          <th onclick="sortTableFaction(3)">Рейтинг перемог</th>
-        </thead>
-        <tbody class="faction_rating_table_tbody" id="factionRating"></tbody>
-      </table>
-    </div>
-    <footer>
-      <h2 class="creator_title">Created by Dima</h6>
-    </footer>
+  </header>
+  <div class="players_rating_container">
+    <h1 class="players_rating_title">Рейтинг гравців</h1>
+    <table class="players_rating_table" id="ratingTablePlayers">
+      <thead class="players_rating_table_thead">
+        <th onclick="sortTablePlayers(0)">Гравці</th>
+        <th onclick="sortTablePlayers(1)">К-сть ігор</th>
+        <th onclick="sortTablePlayers(2)">К-сть перемог</th>
+        <th onclick="sortTablePlayers(3)">Рейтинг перемог</th>
+      </thead>
+      <tbody class="players_rating_table_tbody" id="playerRating"></tbody>
+    </table>
   </div>
+  <div class="faction_rating_container">
+    <h1 class="faction_rating_title">Рейтинг фракцій</h1>
+    <table class="faction_rating_table" id="ratingTableFaction">
+      <thead class="faction_rating_table_thead">
+        <th onclick="sortTableFaction(0)">Фракція</th>
+        <th onclick="sortTableFaction(1)">К-сть ігор</th>
+        <th onclick="sortTableFaction(2)">К-сть перемог</th>
+        <th onclick="sortTableFaction(3)">Рейтинг перемог</th>
+      </thead>
+      <tbody class="faction_rating_table_tbody" id="factionRating"></tbody>
+    </table>
+  </div>
+  <footer>
+    <h2 class="creator_title">Created by Dima</h6>
+  </footer>
 </body>
 
 </html>
