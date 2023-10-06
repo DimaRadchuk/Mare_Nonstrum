@@ -39,7 +39,7 @@ header {
 }
 
 .faction_rating_container {
-    padding: 0 1em 3em 1em;
+    padding: 0 1em 5em 1em;
     border-radius: 3%;
 }
 
@@ -98,7 +98,34 @@ footer {
 }
 
 .creator_title {
-    padding: 0.1em 1em 0.1em 0;
     text-align: right;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
+}
+
+/* .footer_url {
+    margin: 5em 5em 0.5em 0.5em;
+} */
+
+.footer_url_container {
+    float: left;
+    margin: 0.3em 0.3em 0em 1em;
+}
+
+.creator_title_containet {
+    float: right;
+    margin: 0.3em 3em 0em 0.3em;
+}
+
+.footer_url_telegram {
+    width: 2.5em;
+    height: 2.5em;
+
+}
+
+.footer_url_instagram {
+    margin: 0 0 0 1em;
+    width: 2.5em;
+    height: 2.5em;
 }

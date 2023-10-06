@@ -54,7 +54,7 @@ const gameDate = [
     ],
     description: "Перемога здобувши 5 героїв.",
   },
-{
+  {
     date: "02-10-2023",
     players: [
       { player: "Попівчак М.", faction: "Греція", points: 1 },
@@ -64,6 +64,4 @@ const gameDate = [
     ],
     description: "Перемога здобувши лідерство",
   },
-
-       
 ];
