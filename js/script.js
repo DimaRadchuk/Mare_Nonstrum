@@ -106,26 +106,26 @@ function createTableRatingFactionRow(obj) {
   const factionsRow = document.getElementsByClassName(
     "faction_rating_table_tr"
   );
-  const factions = document.getElementsByClassName("faction_rating_table_name");
-  // Create table data rows
-  factionsRow.forEach(function (faction) {
+
+  Array.from(factionsRow).forEach(function (faction, i) {
     let dataCellFaction = [
       document.createElement("td"),
       document.createElement("td"),
       document.createElement("td"),
     ];
 
-    faction = getElementsByClassName("faction_rating_table_name").textContent;
-    DOM.factionRatingRow.appendChild(faction);
-    dataCellFaction[0].textContent = getCountGameFaction(faction, obj);
-    dataCellFaction[1].textContent = getCountWinGameFaction(faction, obj);
-    dataCellFaction[2].textContent = getWinRatingFaction(faction, obj);
+    faction_name = document.getElementsByClassName("faction_rating_table_name")[
+      i
+    ].textContent;
+    dataCellFaction[0].textContent = getCountGameFaction(faction_name, obj);
+    dataCellFaction[1].textContent = getCountWinGameFaction(faction_name, obj);
+    dataCellFaction[2].textContent = getWinRatingFaction(faction_name, obj);
 
-    dataCellFaction.forEach(function (cell) {
-      dataRowFaction.appendChild(cell);
+    dataCellFaction.forEach(function (child) {
+      faction.appendChild(child);
     });
-    DOM.factionRatingRow.appendChild(dataRowFaction);
   });
+  DOM.factionRatingRow.appendChild(faction);
 }
 
 const tbodyFactionRatingRow = createTableRatingFactionRow(gameDate);
