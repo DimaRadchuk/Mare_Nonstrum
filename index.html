@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="css/style.css" />
 
   <script type="text/javascript" src="js/dom.js" defer></script>
-  <script type="text/javascript" src="js/shortTable.js" defer></script>
   <script type="text/javascript" src="js/globalDate.js" defer></script>
   <script type="text/javascript" src="js/script.js" defer></script>
+  <script type="text/javascript" src="js/shortTable.js" defer></script>
 
   <title>Наше море</title>
   <link rel="icon" type="image/x-icon" href="image/icon_img.png">
@@ -33,18 +33,36 @@
       </thead>
       <tbody class="players_rating_table_tbody" id="playerRating"></tbody>
     </table>
-  </div>
-  <div class="faction_rating_container">
-    <h1 class="faction_rating_title">Рейтинг фракцій</h1>
-    <table class="faction_rating_table" id="ratingTableFaction">
-      <thead class="faction_rating_table_thead">
-        <th onclick="sortTableFaction(0)">Фракція</th>
-        <th onclick="sortTableFaction(1)">К-сть ігор</th>
-        <th onclick="sortTableFaction(2)">К-сть перемог</th>
-        <th onclick="sortTableFaction(3)">Рейтинг перемог</th>
-      </thead>
-      <tbody class="faction_rating_table_tbody" id="factionRating"></tbody>
-    </table>
+    <div class="faction_rating_container">
+      <h1 class="faction_rating_title">Рейтинг фракцій</h1>
+      <table class="faction_rating_table" id="ratingTableFaction">
+        <thead class="faction_rating_table_thead">
+          <th onclick="sortTableFaction(0)">Фракція</th>
+          <th onclick="sortTableFaction(1)">К-сть ігор</th>
+          <th onclick="sortTableFaction(2)">К-сть перемог</th>
+          <th onclick="sortTableFaction(3)">Рейтинг перемог</th>
+        </thead>
+        <tbody class="faction_rating_table_tbody" id="factionRating"></tbody>
+        <tr class="faction_rating_table_tr faction_rome">
+          <td class="faction_rating_table_name">Рим</td>
+        </tr>
+        <tr class="faction_rating_table_tr faction_greece">
+          <td class="faction_rating_table_name">Греція</td>
+        </tr>
+        <tr class="faction_rating_table_tr faction_carthage">
+          <td class="faction_rating_table_name">Карфаген</td>
+        </tr>
+        <tr class="faction_rating_table_tr faction_egypt">
+          <td class="faction_rating_table_name">Єгипет</td>
+        </tr>
+        <tr class="faction_rating_table_tr faction_babylon">
+          <td class="faction_rating_table_name">Вавилон</td>
+        </tr>
+      </table>
+    </div>
+    <footer>
+      <h2 class="creator_title">Created by Dima</h6>
+    </footer>
   </div>
   <footer>
     <div class="footer_url_container">
