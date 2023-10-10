@@ -7,6 +7,7 @@ const players = [
   "Матичак Д.",
   "Гарматій Р.",
   "Колісник Н.",
+  "Сторожук О.",
 ];
 
 const factions = ["Рим", "Греція", "Карфаген", "Єгипет", "Вавилон"];
@@ -61,6 +62,16 @@ const gameDate = [
       { player: "Макаренко О.", faction: "Рим", points: 0 },
       { player: "Моргун М.", faction: "Карфаген", points: 0 },
       { player: "Гарматій Р.", faction: "Єгипет", points: 0 },
+    ],
+    description: "Перемога здобувши лідерство",
+  },
+  {
+    date: "10-10-2023",
+    players: [
+      { player: "Моргун М.", faction: "Греція", points: 0 },
+      { player: "Радчук Д.", faction: "Рим", points: 1 },
+      { player: "Сторожук О.", faction: "Карфаген", points: 0 },
+      { player: "Попівчак М.", faction: "Єгипет", points: 0 },
     ],
     description: "Перемога здобувши лідерство",
   },
