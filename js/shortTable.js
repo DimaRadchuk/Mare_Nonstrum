@@ -16,7 +16,7 @@ function sortTablePlayers(n) {
     rows = table.rows;
     for (i = 1; i < rows.length - 1; i++) {
       shouldSwitch = false;
-      if (n > 0) {
+      if (n == 1 || n == 2) {
         x = parseFloat(rows[i].getElementsByTagName("TD")[n].innerHTML);
         y = parseFloat(rows[i + 1].getElementsByTagName("TD")[n].innerHTML);
       } else {
