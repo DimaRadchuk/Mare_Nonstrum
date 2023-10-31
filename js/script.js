@@ -30,8 +30,12 @@ function getWinRatingPlayers(player, obj) {
   let gameCount = getCountGamePlayer(player, obj);
   if (gameWinCount != 0 && gameCount > 2) {
     gameRating = ((gameWinCount / gameCount) * 100).toFixed(2);
+    gameRating += "%";
+  } else if (gameCount < 3) {
+    gameRating = "-";
+  } else {
+    gameRating += "%";
   }
-  gameRating += "%";
 
   return gameRating;
 }
