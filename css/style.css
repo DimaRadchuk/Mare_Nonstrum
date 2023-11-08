@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* background img */
 body {
     min-width: 600px;
@@ -45,7 +49,6 @@ header {
 
 .players_rating_title,
 .faction_rating_title {
-
     width: 10em;
     border-radius: 0.25em;
     margin: 1.5em auto auto auto;
@@ -130,6 +133,74 @@ header {
 
 .faction_babylon:hover {
     background-color: #852975;
+}
+
+/* game lsit */
+.game_list_container {
+    margin: 2em 0 0 0;
+    height: 23em;
+    width: 100%;
+    background-color: #eebb5d;
+    background: linear-gradient(180deg, #eebb5d 0%, #eebb5d6b 50%, #eebb5d 100%);
+    overflow: auto;
+    white-space: nowrap;
+
+}
+
+.game_list_container span {
+    top: 0em;
+    margin: 1em 3em 1em 1em;
+    width: auto;
+    display: inline-block;
+    position: static;
+}
+
+.game_list_container h3 {
+    margin: 0.5em 0 0 0;
+}
+
+.game_list_container h2 {
+    margin: auto;
+    text-align: center;
+}
+
+.game_list_container table {
+    background-color: #eedfc2;
+    border: 0.1em solid #000000;
+    border-collapse: collapse;
+    margin: auto;
+
+}
+
+.game_list_container th {
+    background-color: #8d3613c2;
+}
+
+.game_list_container th,
+.game_list_container td {
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 0.1em solid #000000;
+}
+
+.game_list_win {
+    background-color: #f0cd86;
+}
+
+.game_list_container::-webkit-scrollbar {
+    display: contents;
+    height: 1.5em;
+}
+
+.game_list_container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #615e59;
+    border-radius: 0.4em;
+}
+
+.game_list_container::-webkit-scrollbar-thumb {
+    background: #8d3613c2;
+    border-radius: 0.4em;
 }
 
 /* footer */

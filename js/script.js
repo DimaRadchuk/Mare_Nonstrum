@@ -40,7 +40,7 @@ function getWinRatingPlayers(player, obj) {
   return gameRating;
 }
 
-// players table
+// players table--------------------------------------------------------
 
 function createTableRatingPlayers(players, obj) {
   // Create table data rows
@@ -67,7 +67,7 @@ function createTableRatingPlayers(players, obj) {
 }
 
 const tbodyPlayersRating = createTableRatingPlayers(players, gameDate);
-
+// ----------------------------------------------------------------------------
 // math function
 
 function getCountGameFaction(name, obj) {
@@ -105,7 +105,7 @@ function getWinRatingFaction(faction, obj) {
   return gameRating;
 }
 
-// faction table
+// faction table--------------------------------------------------------
 
 function createTableRatingFactionRow(obj) {
   const factionsRow = document.getElementsByClassName(
@@ -130,33 +130,70 @@ function createTableRatingFactionRow(obj) {
       faction.appendChild(child);
     });
   });
-  DOM.factionRatingRow.appendChild(faction);
 }
 
 const tbodyFactionRatingRow = createTableRatingFactionRow(gameDate);
 
-function createTableRatingFaction(factions, obj) {
-  // Create table data rows
-  factions.forEach(function (faction) {
-    const dataRowFaction = document.createElement("tr");
+// game list --------------------------------------------------------
 
-    let dataCellFaction = [
-      document.createElement("td"),
-      document.createElement("td"),
-      document.createElement("td"),
-      document.createElement("td"),
+function createTableListGame(obj) {
+  obj.reverse().forEach(function (game) {
+    const dateSpanGame = document.createElement("span");
+    const dateGameDate = document.createElement("h2");
+    dateGameDate.innerHTML = game.date;
+    dateSpanGame.appendChild(dateGameDate);
+    DOM.gameListAll.appendChild(dateSpanGame);
+
+    // Create table data rows
+    const dataTable = document.createElement("table");
+    const dateThead = document.createElement("thead");
+
+    // Create thead
+    let dateTheadTh = [
+      document.createElement("th"),
+      document.createElement("th"),
+      document.createElement("th"),
     ];
+    dateTheadTh[0].textContent = "Гравці";
+    dateTheadTh[1].textContent = "Фракція";
+    dateTheadTh[2].textContent = "Переможець";
 
-    dataCellFaction[0].textContent = faction;
-    dataCellFaction[1].textContent = getCountGameFaction(faction, obj);
-    dataCellFaction[2].textContent = getCountWinGameFaction(faction, obj);
-    dataCellFaction[3].textContent = getWinRatingFaction(faction, obj);
-
-    dataCellFaction.forEach(function (cell) {
-      dataRowFaction.appendChild(cell);
+    // Add thed for table
+    dateTheadTh.forEach(function (cell) {
+      dateThead.appendChild(cell);
     });
-    DOM.factionRating.appendChild(dataRowFaction);
+
+    dataTable.appendChild(dateThead);
+
+    const dateTbody = document.createElement("tbody");
+
+    game.players.forEach(function (player) {
+      const dateGameRow = document.createElement("tr");
+      let dataGameCell = [
+        document.createElement("td"),
+        document.createElement("td"),
+        document.createElement("td"),
+      ];
+      dataGameCell[0].textContent = player.player;
+      dataGameCell[1].textContent = player.faction;
+      dataGameCell[2].textContent = player.points;
+
+      if (player.points == 1) {
+        dateGameRow.className = "game_list_win";
+      }
+
+      dataGameCell.forEach(function (cell) {
+        dateGameRow.appendChild(cell);
+      });
+      dateTbody.appendChild(dateGameRow);
+    });
+    dataTable.appendChild(dateTbody);
+    dateSpanGame.appendChild(dataTable);
+    const dateGameDesc = document.createElement("h3");
+    dateGameDesc.textContent = game.description;
+    dateSpanGame.appendChild(dateGameDesc);
+    DOM.gameListAll.appendChild(dateSpanGame);
   });
 }
 
-const tbodyFactionRating = createTableRatingFaction(factions, gameDate);
+const tableGameList = createTableListGame(gameDate);
