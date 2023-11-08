@@ -93,6 +93,6 @@ const gameDate = [
       { player: "Макаренко О.", faction: "Карфаген", points: 1 },
       { player: "Моргун М.", faction: "Єгипет", points: 0 },
     ],
-    description: "",
+    description: "Перемога здобувши 5 героїв.",
   },
 ];
