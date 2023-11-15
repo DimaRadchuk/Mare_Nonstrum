@@ -95,4 +95,22 @@ const gameDate = [
     ],
     description: "Перемога здобувши 5 героїв.",
   },
+  {
+    date: "13-11-2023",
+    players: [
+      { player: "Макаренко О", faction: "Греція", points: 1 },
+      { player: "Моргун М.", faction: "Рим", points: 0 },
+      { player: "Гарматій Р.", faction: "Карфаген", points: 0 },
+    ],
+    description: "Перемога здобувши 5 героїв.",
+  },
+  {
+    date: "13-11-2023",
+    players: [
+      { player: "Моргун М.", faction: "Греція", points: 1 },
+      { player: "Макаренко О", faction: "Рим", points: 0 },
+      { player: "Гарматій Р.", faction: "Карфаген", points: 0 },
+    ],
+    description: "Перемога здобувши 5 героїв.",
+  },
 ];
