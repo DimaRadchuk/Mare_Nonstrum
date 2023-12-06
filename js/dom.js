@@ -3,4 +3,5 @@ const DOM = {
   factionRating: document.getElementById("factionRating"),
   factionRatingRow: document.getElementById("factionRating"),
   gameListAll: document.getElementById("gameList"),
+  seasonList: document.getElementById("season"),
 };

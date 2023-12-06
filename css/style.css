@@ -31,6 +31,13 @@ header {
     text-align: center;
 }
 
+/* season list */
+
+.season_select_list {
+    margin: auto;
+    width: auto;
+}
+
 /* player and faction table */
 
 .players_rating_container {

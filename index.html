@@ -18,10 +18,15 @@
 
 <body onload="sortTablePlayers(1); sortTablePlayers(3); sortTableFaction(3)">
   <header>
-    <div class="header_container">
-      <h1>Турнір по грі "Наше море"<br>від "Твоя територія"</h1>
+    <div class="header_container" onchange="seasonSelected()"></div>
+    <h1>Турнір по грі "Наше море"<br>від "Твоя територія"</h1>
     </div>
   </header>
+  <div class="season_list_container">
+    <label>Сезон</label>
+    <select id="season" class="season_select_list">
+    </select>
+  </div>
   <div class="players_rating_container">
     <h1 class="players_rating_title">Рейтинг гравців</h1>
     <table class="players_rating_table" id="ratingTablePlayers">
