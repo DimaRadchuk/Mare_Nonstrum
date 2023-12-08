@@ -124,7 +124,7 @@ const gameDate = [
               { player: "Радчук Д.", faction: "Єгипет", points: 0 },
               { player: "Возьний О.", faction: "Вавилон", points: 0 },
             ],
-            description: "Перемога побудовою піраміди",
+            description: "Перемога побудовою піраміди.",
           },
         ],
       },

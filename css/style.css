@@ -108,7 +108,7 @@ header {
 .players_rating_table td,
 .faction_rating_table th,
 .faction_rating_table td {
-    padding: 0.7em;
+    padding: 0.6em;
     font-weight: bold;
     text-align: center;
     border-bottom: 0.1em solid #000000;
