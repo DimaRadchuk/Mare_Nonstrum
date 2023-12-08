@@ -2,7 +2,7 @@
 
 function createSelectSeasonList(obj) {
   // Create table data rows
-  obj.forEach(function (game) {
+  obj.reverse().forEach(function (game) {
     const dataRow = document.createElement("option");
     dataRow.classList.add("seasonItem");
     game.season.forEach((title) => {
@@ -75,7 +75,7 @@ function createTableRatingPlayers(players, obj) {
   // Create table data rows
   players.forEach(function (player) {
     const dataRow = document.createElement("tr");
-
+    dataRow.className = "player_rating_row";
     let dataCell = [
       document.createElement("td"),
       document.createElement("td"),
@@ -185,6 +185,7 @@ function createTableRatingFactionRow(obj) {
     );
 
     dataCellFaction.forEach(function (child) {
+      child.className = "faction_rating_row";
       faction.appendChild(child);
     });
   });
@@ -201,6 +202,7 @@ function createTableListGame(obj) {
       if (season.title == selectedSeason) {
         season.ring.reverse().forEach(function (game) {
           const dateSpanGame = document.createElement("span");
+          dateSpanGame.className = "game_list_block";
           const dateGameDate = document.createElement("h2");
           dateGameDate.innerHTML = game.date;
           dateSpanGame.appendChild(dateGameDate);
@@ -264,26 +266,29 @@ function createTableListGame(obj) {
 const tableGameList = createTableListGame(gameDate);
 
 /* update page */
-let elm = document.getElementById("season");
-let evt = document.createEvent("HTMLEvents");
-evt.initEvent("change", false, true);
+$("select[id=season]").on("change", function () {
+  const player = document.getElementsByClassName("player_rating_row");
+  Array.from(player).forEach(function (item) {
+    item.remove();
+  });
 
-for (let i = 0; i < elm.options.length; i++) {
-  let option = elm.options[i];
+  const faction = document.getElementsByClassName("faction_rating_row");
+  Array.from(faction).forEach(function (item) {
+    item.remove();
+  });
 
-  if (option.value === "0") {
-    option.setAttribute("selected", "selected");
-  } else {
-    option.removeAttribute("selected");
-  }
-}
+  const block = document.getElementsByClassName("game_list_block");
+  Array.from(block).forEach(function (item) {
+    item.remove();
+  });
 
-elm.dispatchEvent(evt);
-
-function seasonSelected() {
-  // code
-  console.log("gogo");
-  tableGameList = createTableListGame(gameDate);
-  createTableRatingFactionRow(gameDate);
-  createTableRatingPlayers(players, gameDate);
-}
+  let tbodyPlayersRatingUpdate = createTableRatingPlayers(players, gameDate);
+  let tbodyFactionRatingRowUpdate = createTableRatingFactionRow(gameDate);
+  let tableGameListUpdate = createTableListGame(gameDate);
+  // $(".players_rating_table_tbody").val(
+  //   createTableRatingPlayers(players, gameDate)
+  // );
+  // $(".faction_rating_table_tbody").val(
+  //   createTableRatingPlayers(players, gameDate)
+  // );
+});
