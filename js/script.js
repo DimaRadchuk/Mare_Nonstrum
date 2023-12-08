@@ -301,10 +301,4 @@ $("select[id=season]").on("change", function () {
   let tbodyPlayersRatingUpdate = createTableRatingPlayers(gameDate);
   let tbodyFactionRatingRowUpdate = createTableRatingFactionRow(gameDate);
   let tableGameListUpdate = createTableListGame(gameDate);
-  // $(".players_rating_table_tbody").val(
-  //   createTableRatingPlayers(players, gameDate)
-  // );
-  // $(".faction_rating_table_tbody").val(
-  //   createTableRatingPlayers(players, gameDate)
-  // );
 });

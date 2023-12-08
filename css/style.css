@@ -33,16 +33,31 @@ header {
 
 /* season list */
 
+.season_list_container {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.5em auto auto auto;
+    width: 18em;
+    height: 2em;
+    background-color: #eebb5d;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.season_list_container label {
+    font-size: 1.5em;
+}
+
 .season_select_list {
-    margin: auto;
-    width: auto;
+    font-size: 1em;
+    margin: 0 0 0 1em;
+    background-color: #eedfc2;
 }
 
 /* player and faction table */
-
-.players_rating_container {
-    display: flexbox;
-}
 
 .players_rating_container {
     padding: 0 1em 0 1em;
@@ -58,19 +73,25 @@ header {
 .faction_rating_title {
     width: 10em;
     border-radius: 0.25em;
-    margin: 1.5em auto auto auto;
     text-align: center;
     background-color: #eebb5d;
 }
 
+.players_rating_title {
+    margin: 0.25em auto auto auto;
+}
+
+.faction_rating_title {
+    margin: 1.5em auto auto auto;
+}
+
 .players_rating_table,
 .faction_rating_table {
-    background-color: #f5c160;
+    background-color: #eebb5d;
     border: 0.1em solid #000000;
     border-collapse: collapse;
     margin: auto;
     width: 35em;
-
 }
 
 .players_rating_table th,
@@ -87,7 +108,7 @@ header {
 .players_rating_table td,
 .faction_rating_table th,
 .faction_rating_table td {
-    padding: 10px;
+    padding: 0.7em;
     font-weight: bold;
     text-align: center;
     border-bottom: 0.1em solid #000000;
@@ -142,7 +163,7 @@ header {
     background-color: #852975;
 }
 
-/* game lsit */
+/* game list */
 .game_list_container {
     margin: 2em 0 0 0;
     height: 23em;
@@ -151,7 +172,8 @@ header {
     background: linear-gradient(180deg, #eebb5d 0%, #eebb5d6b 50%, #eebb5d 100%);
     overflow: auto;
     white-space: nowrap;
-
+    display: flex;
+    align-items: center;
 }
 
 .game_list_container span {
@@ -185,7 +207,7 @@ header {
 
 .game_list_container th,
 .game_list_container td {
-    padding: 10px;
+    padding: 0.7em;
     font-weight: bold;
     text-align: center;
     border-bottom: 0.1em solid #000000;
