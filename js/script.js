@@ -69,9 +69,25 @@ function getWinRatingPlayers(player, obj, selectedSeason) {
 }
 
 // players table--------------------------------------------------------
-
-function createTableRatingPlayers(players, obj) {
+function createTableRatingPlayers(obj) {
   let selectedSeason = document.getElementById("season").value;
+
+  let players = [];
+
+  obj.forEach((item) => {
+    item.season.forEach((season) => {
+      if (season.title == selectedSeason) {
+        season.ring.forEach((games) => {
+          games.players.forEach((player) => {
+            if (players.indexOf(player.player) === -1) {
+              players.push(player.player);
+            }
+          });
+        });
+      }
+    });
+  });
+
   // Create table data rows
   players.forEach(function (player) {
     const dataRow = document.createElement("tr");
@@ -99,7 +115,7 @@ function createTableRatingPlayers(players, obj) {
   });
 }
 
-const tbodyPlayersRating = createTableRatingPlayers(players, gameDate);
+const tbodyPlayersRating = createTableRatingPlayers(gameDate);
 // ----------------------------------------------------------------------------
 // math function
 
@@ -282,7 +298,7 @@ $("select[id=season]").on("change", function () {
     item.remove();
   });
 
-  let tbodyPlayersRatingUpdate = createTableRatingPlayers(players, gameDate);
+  let tbodyPlayersRatingUpdate = createTableRatingPlayers(gameDate);
   let tbodyFactionRatingRowUpdate = createTableRatingFactionRow(gameDate);
   let tableGameListUpdate = createTableListGame(gameDate);
   // $(".players_rating_table_tbody").val(
