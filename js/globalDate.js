@@ -56,7 +56,7 @@ const gameDate = [
               { player: "Моргун М.", faction: "Карфаген", points: 0 },
               { player: "Гарматій Р.", faction: "Єгипет", points: 0 },
             ],
-            description: "Перемога здобувши лідерство",
+            description: "Перемога здобувши лідерство.",
           },
           {
             date: "10-10-2023",
@@ -66,7 +66,7 @@ const gameDate = [
               { player: "Сторожук О.", faction: "Карфаген", points: 0 },
               { player: "Попівчак М.", faction: "Єгипет", points: 0 },
             ],
-            description: "Перемога здобувши лідерство",
+            description: "Перемога здобувши лідерство.",
           },
           {
             date: "31-10-2023",
@@ -76,7 +76,7 @@ const gameDate = [
               { player: "Гарматій Р.", faction: "Єгипет", points: 1 },
               { player: "Попівчак М.", faction: "Карфаген", points: 0 },
             ],
-            description: "Перемога здобувши лідерство",
+            description: "Перемога здобувши лідерство.",
           },
           {
             date: "06-11-2023",
@@ -125,6 +125,15 @@ const gameDate = [
               { player: "Возьний О.", faction: "Вавилон", points: 0 },
             ],
             description: "Перемога побудовою піраміди.",
+          },
+          {
+            date: "11-12-2023",
+            players: [
+              { player: "Сторожук О.", faction: "Рим", points: 0 },
+              { player: "Моргун М.", faction: "Греція", points: 1 },
+              { player: "Радчук Д.", faction: "Карфаген", points: 0 },
+            ],
+            description: "Перемога здобувши лідерство.",
           },
         ],
       },
