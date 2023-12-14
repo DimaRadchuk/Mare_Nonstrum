@@ -135,6 +135,15 @@ const gameDate = [
             ],
             description: "Перемога здобувши лідерство.",
           },
+          {
+            date: "14-12-2023",
+            players: [
+              { player: "Радчук Д.", faction: "Рим", points: 0 },
+              { player: "Моргун М.", faction: "Греція", points: 1 },
+              { player: "Рега О.", faction: "Карфаген", points: 0 },
+            ],
+            description: "Перемога здобувши лідерство.",
+          },
         ],
       },
     ],

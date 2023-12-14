@@ -281,6 +281,8 @@ function createTableListGame(obj) {
 
 const tableGameList = createTableListGame(gameDate);
 
+// onload = "sortTablePlayers(1); sortTablePlayers(3); sortTableFaction(3)";
+
 /* update page */
 $("select[id=season]").on("change", function () {
   const player = document.getElementsByClassName("player_rating_row");
@@ -301,4 +303,7 @@ $("select[id=season]").on("change", function () {
   let tbodyPlayersRatingUpdate = createTableRatingPlayers(gameDate);
   let tbodyFactionRatingRowUpdate = createTableRatingFactionRow(gameDate);
   let tableGameListUpdate = createTableListGame(gameDate);
+
+  sortTablePlayers(2);
+  sortTablePlayers(3);
 });
