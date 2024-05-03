@@ -157,4 +157,22 @@ const gameDate = [
       },
     ],
   },
+  {
+    season: [
+      {
+        title: "Весна 2024",
+        ring: [
+          {
+            date: "30-04-2024",
+            players: [
+              { player: "Макаренко О.", faction: "Рим", points: 0 },
+              { player: "Марват З.", faction: "Греція", points: 1 },
+              { player: "Моргун М.", faction: "Карфаген", points: 0 },
+            ],
+            description: "Перемога здобувши лідерство.",
+          },
+        ],
+      },
+    ],
+  },
 ];
